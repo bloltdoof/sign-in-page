@@ -9,8 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div id="sign-in-page">
-        <div id="lef-side">
+    <div id="sign-in-page" class="flex flex-row">
+        <div id="lef-side" class="w-1/2">
             <div id="sign-in">
                 <h1>Sing in to your account</h1>
                 <div id="logos">
@@ -28,26 +28,27 @@
                     <div id="form-group">
                         <input type="password" placeholder="Password">
                     </div>
-                    <div id="remember-class">
+                    <div id="remember-class" class="flex space-x-4">
                         <div id="remeber-me">
                             <input type="checkbox" id="remember-me">
                             <label for="remember-me">Remember me</label>
                         </div>
                         <div id="forgot-password">
-                            <a href="#">Forgot password?</a>
+                            <a href="#" class="link">Forgot password?</a>
                         </div>
                         
                     </div>
                     <div id="submit-button">
-                        <input type="submit" value="Sign in">
+                        <input type="submit" value="Sign in" class="btn btn-wide">
                     </div>
             </div>
         </div>
 
 
-        <div id="right-side">
+        <div id="right-side" class="w-1/2 flex flex-row">
             <div id="container">
                 <div id="image">
+                    <object data="img/family1.svg" width="400" height="400" type=""></object>
                     
                 </div>
                 <h1>Designed for your company</h1>
