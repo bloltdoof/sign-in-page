@@ -10,49 +10,63 @@
 </head>
 <body>
     <div id="sign-in-page" class="flex flex-row">
-        <div id="lef-side" class="w-1/2 flex flex-col">
-            <div id="sign-in">
-                <h1>Sing in to your account</h1>
-                <div id="logos" class="flex flex-row space-x-4">
-                    <object data="img/search.png"  height="25" width="25" type="" id="google"></object>
-                    <object data="img/facebook.png" height="25" width="25" type="" id="facebook"></object>
-                    <object data="img/twitter.png" height="25" width="25" type="" id="twitter"></object>
+        <div id="lef-side" class="w-1/2 hero bg-white">
+            <div id="sign-in" class="card flex-shrink-0 min-h-screen flex-col hero-content bg-base-100 border">
+                <h1 class="text-3xl font-bold">Sing in to your account</h1>
+                <div id="logos" class="flex flex-row space-x-4 py-4">
+                    <a href="" id="google">
+                        <object data="img/search.png"  class="bg-white rounded-lg" height="28" width="28" type="" id="google"></object>
+                    </a>
+                    <a href="" id="facebook">
+                        <object data="img/facebook.png" class="bg-white rounded-lg" height="28" width="28" type="" id="facebook"></object>
+                    </a>
+                    <a href="" id="twitter">
+                        <object data="img/twitter.png" class="bg-white rounded-lg" height="28" width="28" type="" id="twitter"></object>
+                    </a>
+                    
                 </div>
-                <div id="separator">
-                    <p>or do it with e-mail</p>
+                <div id="separator" class="py-2">
+                    <p class="font-mono text-sm font-semibold">or do it with e-mail</p>
                 </div>
                 <form action="">
-                    <div id="form-group">
-                        <input type="text" placeholder="E-mail">
-                    </div>
-                    <div id="form-group">
-                        <input type="password" placeholder="Password">
-                    </div>
-                    <div id="remember-class" class="flex space-x-4">
-                        <div id="remeber-me">
-                            <input type="checkbox" id="remember-me">
-                            <label for="remember-me">Remember me</label>
-                        </div>
-                        <div id="forgot-password">
-                            <a href="#" class="link">Forgot password?</a>
-                        </div>
+                    <div class="form-control py-4">
+                        <label class="input-group input-group-vertical">
+                          <span>Email</span>
+                          <input type="text" placeholder="info@site.com" class="input input-bordered">
+                        </label>
+                      </div>
+                      <div class="form-control py-4">
+                        <label class="input-group input-group-vertical">
+                          <span>Password</span>
+                          <input type="text" placeholder="Your password" class="input input-bordered">
+                        </label>
+                      </div>
+                    <div id="remember-class" class="flex space-x-6 py-4">
+                        <div class="form-control">
+                            <label class="cursor-pointer label">
+                              <span class="label-text">Remember me</span> 
+                              <input type="checkbox" checked="checked" class="checkbox">
+                            </label>
+                          </div>
+                          <a class="link">Forgot password?</a>
+
                         
                     </div>
-                    <div id="submit-button">
+                    <div id="submit-button" class="py-4">
                         <input type="submit" value="Sign in" class="btn btn-wide">
                     </div>
             </div>
         </div>
 
 
-        <div id="right-side" class="w-1/2 flex flex-row">
+        <div id="right-side" class="w-1/2 flex flex-row hero hero-content">
             <div id="container">
-                <div id="image">
-                    <object data="img/family1.svg" width="400" height="400" type=""></object>
+                <div id="image" class="border justify-center">
+                    <object data="img/family1.svg" width="400" height="300" type=""></object>
                     
                 </div>
-                <h1>Designed for your company</h1>
-                <p>
+                <h1 class="text-5xl font-bold text-center">Designed for your company</h1>
+                <p class="py-6 text-lg text-center">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa hic qui, provident nesciunt sed quo. Quibusdam, laudantium? Illo voluptate aut delectus, repellat dolores, quaerat similique qui quia voluptatum labore est?
                 </p>
             </div>
